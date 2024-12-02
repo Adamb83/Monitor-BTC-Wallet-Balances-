@@ -1,6 +1,9 @@
 # Monitor-BTC-Wallet-Balances
 Script to monitor a list of BTC wallet balances in near real time using Electrumx server. 
 
+To run this script you must be hosting your own Bitcoin node with an Electrumx server connected, the BTC node must have completed its intitial block download about 650gb atm, and electrumx must be completed it syncing and built it's databases.
+SSD's are required for this, one for node and one for Electrumx. 
+
 This script is used to monitor wallet addresses, the addresses must be converted to scripthash. 
 I've included examples of an input csv of wallet addresses with their scripthash and the output csv of monitored balances.
 
