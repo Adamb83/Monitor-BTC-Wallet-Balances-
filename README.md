@@ -12,3 +12,5 @@ Using an overfitted swing trading strategy to train a model.. I don't expect to 
 
 This is very early days, I don't know if my approach will work very well, as electrumx server might not be fast enough registering the wallet activity... I will add a timestamp to record the delay from txn time to updated csv time.
 
+See it running here https://www.youtube.com/watch?v=GL0DgHYPNDs
+It's painfully slow and timing out in the video as it is subscribed to 1240 wallet addresses and Electrumx db is on a hdd soon to be a ssd which should run much faster..
