@@ -1,8 +1,10 @@
 # Monitor-BTC-Wallet-Balances
 Script to monitor a list of BTC wallet balances in near real time using Electrumx server. 
 
+Ideas is to use python based scripts and machine learning to correlate wallet activity with BTC price action to create an indicator for automated trading strategies. (ambitious) 
+
 To run this script you must be hosting your own Bitcoin node with an Electrumx server connected, the BTC node must have completed its intitial block download about 650gb atm, and electrumx must be completed it syncing and built it's databases.
-SSD's are required for this, one for node and one for Electrumx. 
+SSD's are required for this, one for node and one for Electrumx and preferebly one for your SQL database, in the screenshot I am streaming the data (another script is fetching the csv if it changes and uploading it to postgres DB) from the python script to a postrgres DB and querying it with Grafana to get a visualization on potential correlation.
 
 This script is used to monitor wallet addresses, the addresses must be converted to scripthash. 
 I've included examples of an input csv of wallet addresses with their scripthash and the output csv of monitored balances.
